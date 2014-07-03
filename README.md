@@ -1,14 +1,7 @@
 iOS Styleguide
 ==============
 
-Objective-C style guide, best practices, and project structure. For now, it's going to be a knowledge dump.
-
---------------
-
-- [Objective-C Style Guide](styleguide.md)
-- [Stack](stack.md)
-- [Project Structure](structure.md)
- 
+Objective-C style guide, best practices, and project structure. For now, it's going to be a knowledge dump with no particular structure. Deal with it.
 
 
 ##Protocols & Delegates
