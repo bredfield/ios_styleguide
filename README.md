@@ -3,6 +3,20 @@ iOS Styleguide
 
 Objective-C style guide, best practices, and project structure. For now, it's going to be a knowledge dump with no particular structure. Deal with it.
 
+##MVC
+###Overview
+Apple doesn't provide a great base for an logical, model-view-controller organized code base. Typical iOS projects consist of huge view controllers, which house view controller, view, and data logic. Implementing a strict MVC structure has to be slightly forced, but ultimately provides tremendous benefits (organization, reusability/modularity, testability) to a project.
+
+###Models
+A model is essentially an interface around a data structure.  
+
+###Views
+
+###Controllers
+
+###Rules
+
+
 
 ##Protocols & Delegates
 ###Overview
@@ -12,9 +26,9 @@ The delegate pattern is the primary method of communication going up a view / co
 - Bubble up. 
   - Protocols should be defined on the object that others are subscribing to. 
   - For example, to communicate from a view (child) to its view controller (parent), the protocol should be defined on the view. 
-  - Also works with child / parent view controllers, as well as model protocols.
+  - Also works with child -> parent view controllers, as well as models.
 - Prefix delegate methods w/ name
-  - For example, `- (void)aboutViewDidSelectXButton`.
+  - For example, `- (void)someViewDidDoXAction`.
   - Gets verbose, but keeps things readable and tracable.
 
 ###Example
